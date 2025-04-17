@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  min-height: 100vh;
+  background-color: #F8F9FC;
+}
+
+.dashboard-grid__sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 256px;
+  z-index: 40;
+  background-color: #150101;
+}
+
+.dashboard-grid__main {
+  margin-left: 256px;
+  min-height: 100vh;
+  width: calc(100% - 256px);
+}
+
+/* Radix-like utility classes */
+.rt-container {
+  width: calc(100vw - 256px);  /* Use viewport width minus sidebar */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 48px;
+}
+
+.rt-ContainerInner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;  /* Prevent content from forcing container wider */
+}
+
+.rt-Box {
+  position: relative;
+  width: 100%;
+}
+
+.rt-Flex {
+  display: flex;
+}
+
+.rt-r-mt-6 {
+  margin-top: 1.5rem;
+}
+
+.rt-r-mt-4 {
+  margin-top: 1rem;
+}
+
+.rt-r-mt-3 {
+  margin-top: 0.75rem;
+}
+
+.rt-r-mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.rt-r-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.rt-r-px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.rt-r-pb-8 {
+  padding-bottom: 2rem;
+}
+
+.rt-r-ai-center {
+  align-items: center;
+}
+
+.rt-r-jc-space-between {
+  justify-content: space-between;
+}
+
+.rt-r-gap-12 {
+  gap: 3rem;
+}
+
+.rt-Heading {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.rt-r-size-6 {
+  font-size: 1.5rem;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+} 
