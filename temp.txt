@@ -1,0 +1,10 @@
+import type { NextPage } from 'next'; 
+import { useRouter } from 'next/router'; 
+import Head from 'next/head'; 
+import { Home as HomeIcon } from 'lucide-react'; 
+import Sidebar from '@/components/Sidebar'; 
+import Header from '@/components/Header'; 
+import SiteOverview from '@/components/SiteOverview'; 
+import GenerationChart from '@/components/GenerationChart'; 
+import SiteSystems from '@/components/SiteSystems'; 
+import { mockSiteData, getSiteSystemsData } from '@/lib/data';
