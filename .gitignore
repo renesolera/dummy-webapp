@@ -1,4 +1,11 @@
-# Ignore node_modules folder
-node_modules/
-.next/
-
+# dependencies  
+/node_modules  
+/.pnp  
+.pnp.js  
+# next.js  
+/.next/  
+/out/  
+# production  
+/build  
+# vercel  
+.vercel 
